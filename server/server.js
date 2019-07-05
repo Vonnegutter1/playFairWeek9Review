@@ -16,7 +16,7 @@ app.listen( port, ()=>{
     console.log( 'server up on:', port );
 })
 
-// routes
+// routesx
 app.delete( '/items/:id', ( req, res )=>{
     console.log( '/items DELETE hit:', req.params.id );
     const query = `DELETE FROM "items" WHERE id=$1;`;
